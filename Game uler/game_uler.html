@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name = "viewpoint" content="width = device - width, initial-scale = 1.0">
+    <title>Snake Game</title>
+  </head>
+
+   <body>         <!-- Create by MrKuncay -->
+
+    <h2>Score</h2>
+    <div id="score">
+      0
+    </div>
+    <canvas id="snakeboard" width="400" height="400"></canvas>
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+      }
+
+      #snakeboard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        color: white;
+        font-size: 50px;
+      }
+    </style>
+  </body>
+
+    <script src="main.js"></script>
+
+</html>

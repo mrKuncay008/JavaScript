@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body {
+        background-color: black;
+        font-family: Courier;
+        
+        
+    }
+
+     .asu {
+
+        color: green;
+    }
+
+    button {
+        color: black;
+        border-radius: 40%;
+        background-color:green;
+        font-size: small;
+    }
+
+    .ft {
+        color: brown;
+        text-align: center;
+        width: auto;
+        position: relative;
+        font-size: small;
+    }
+
+   </style>
+    <title>Document Variable</title>
+</head>
+<body> 
+<div id class="ft">
+ <p> H4cked by mrkuncay ft Tejch_0</p>
+ <p style="color: white;">root@mrkuncay:-$ </p>
+    
+ <button onclick="Fungsi()"><b>condition </button>
+    
+    <br><br>
+ <button onclick="Nilai()"><b> kelulusan </button>
+    
+    <br><br>
+<button onclick="Switch()"><b>Switch Case</button>
+        
+    <br><br>
+<button onclick="Nest()"><b>Nested</button>
+    
+
+</div>  
+<div id class="asu">
+
+<script>
+
+// percabangn perkondisian (if else)
+function Fungsi() {
+    var pass = prompt("Password: "); //popup prompt 
+    if (pass == "kuncay") {
+        document.write("<h2> hallo kuncay </h2>")
+    } else {            
+        document.write("<h3> Salah !! Coba lagi </h3>")
+    }
+    document.write("<P> Terimsss!! </p>")
+}
+
+function Nilai() {
+    var nilai = prompt("Masukan Nilai: ");  // promp nilai/ mencari grade untuk nilai
+    var Lulus = " ";
+
+    if (nilai >= 90) {Lulus = "A+"}
+    else if (nilai >= 90) { Lulus = "A+" }
+    else if (nilai >= 80) { Lulus = "B+" }
+    else if (nilai >= 70) { Lulus = "C+" }
+    else if (nilai >= 65) { Lulus = "E" }
+    else {Lulus = "Gagal :("}
+    alert("Nilai / Kelulusan anda adalah: " + Lulus);
+}
+
+function Switch() {
+    var jawab = prompt("itam beruntung! Silahkan pilih hadiahmu dengan memasukan angka 1 sampai 5");
+    var hadiah = alert("kita hitungg 1.....2.....3...");
+        
+        switch(jawab){
+            case "1":
+                hadiah = "Tisu";
+                break;
+
+            case "2":
+                hadiah = "1 Kotak Kopi";
+                break;
+
+            case "3":
+                hadiah = "Sticker";
+                break;
+
+            case "4":
+                hadiah = document.write("Minyak Goreng");
+                break;
+
+            case "5":
+                hadiah = "Uang Rp 50.000";
+                break;
+
+            default:
+                alert("Sorry yeahh")
+        }
+
+        if(hadiah === " "){
+            document.write("<p>Kamu gagal mendapat hadiah</p>");
+    } 
+}
+
+function Nest() {
+    var user = prompt ("Username: ");
+    var pass = prompt ("Password: ");
+
+        if (user == "kuncay" && pass == "12345") // ini adalah if di dalam if
+            {    
+                alert("Selamat datang bos kuncay");
+
+            } else {
+                document.write("<h1>Password salah cobalagi yoo</h1>");
+         window.history.back()
+    }
+}
+
+
+
+</script>
+</div>
+</body>
+</html>
