@@ -1,0 +1,12 @@
+#main {
+	text-align: center;
+	background-color: dimgray;
+}
+
+h1 { color: white; }
+
+#a {
+	font-family: Verdana, Ganeva, sans-serif;
+	color: darkred;
+	outline-color: white;
+}
