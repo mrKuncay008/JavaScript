@@ -14,7 +14,7 @@ console.log("Nama:",pren.nama);
 console.log("Umur:",pren.umur);
 console.log("Alamat:",pren.tinggal);
 console.log("\n");
-
+delete user2.tinggal
 console.log("Umur:",user2.nama);
 console.log("Umur:",user2.umur);
 console.log("Umur:",user2.tinggal);
