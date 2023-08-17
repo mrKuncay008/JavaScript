@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inner</title>
+</head>
+<body>
+	<h1>Mencoba Document js</h1>
+
+	<div id="inner">
+		<button id="tekan" onclick="hallo()">pencet</button>
+	</div>
+		<button id="lanjut" onclick="mulai()">Lanjutan!</button>
+<!-- 
+	Menampilkan perkalian
+-->
+	<p>Masukan Nilai</p>
+	<input type="text" name="nilai" id="n1">
+	<br>
+	<input type="text" name="nilai" id="n2"> 
+	<br>
+	<button onclick="hasil()">Lihat</button>
+	<p id="hasil"></p>
+
+	<script type="text/javascript">
+
+		alert("Hallo Nama Saya Kuncay");
+
+		function hallo() {
+	
+			var i = document.getElementById('inner');
+			i.innerHTML = "<h1>Selamat Datang!!</h1>";
+		}
+
+		function mulai() {
+			
+			document.getElementById('lanjut').innerHTML=
+			"<marquee direction='left' scrollamount='5'> Mari Kita belajar DOM </marquee>"
+		}
+
+		function hasil() {
+
+			var satu = document.getElementById('n1').value; 
+			var dua = document.getElementById('n2').value;
+			var total = parseInt(satu) + parseInt(dua);
+			document.getElementById('hasil').innerHTML = "<p>Hasil nya: </p>" +  total;
+		}
+	</script>
+	  
+</body>
+</html>
