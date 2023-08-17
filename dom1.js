@@ -15,6 +15,9 @@ console.log("Kucing Masse",kucing["Masse"]); // denga array
 console.log("Kucing Masse: ");
 console.log(kucing.Masse.join()); // Dengan Join
 console.log("Kucing Aisma Mati satu Namanya:", kucing.Aisma[2]);
-
-console.log("Kucing aisma");
+console.log(" ");
+console.log("Kucing aisma: ");
 kucing.Aisma.forEach(aisma => console.log(aisma)); // Dengan Foreach
+console.log("");
+console.log("Kucing Masse: ");
+kucing.Masse.forEach(Masse => console.log(Masse));
