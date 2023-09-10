@@ -1,13 +1,13 @@
-var penumpang = [];
-var seats = document.getElementsByClassName('seet');
-for (var i = 0; i < seats.length; i++) {
-    seats[i].innerHTML = '<p> O </p>';
+var penumpang = [document.getElementsByClassName('seet')];
+for (var i = 0; i < penumpang.length; i++) {
+	penumpang[i].innerHTML = undefined;
 }
 var tambah = function(nama, penumpang) {
 	// Chek apakah penumpang kosong
 	if (penumpang.length == 0) {
 		// maka di tambah penumpang
 		penumpang.push(nama);
+		penumpang.innerHTML(nama);
 		// kembalikan nila
 		return penumpang
 	}
