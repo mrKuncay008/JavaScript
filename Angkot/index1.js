@@ -1,4 +1,8 @@
 var penumpang = [];
+var seats = document.getElementsByClassName('seet');
+for (var i = 0; i < seats.length; i++) {
+    seats[i].innerHTML = '<p> O </p>';
+}
 var tambah = function(nama, penumpang) {
 	// Chek apakah penumpang kosong
 	if (penumpang.length == 0) {
@@ -12,6 +16,7 @@ var tambah = function(nama, penumpang) {
 		for (var i = 0; i < penumpang.length; i++) {
 			if (penumpang[i] == undefined) {
 				penumpang[i] = nama;
+				penumpang[i] = document.getElementsByClassName('seet');
 			}
 			else if (penumpang[i] == nama) {
 				console.log(nama + ' Error Sudah Ada !!');

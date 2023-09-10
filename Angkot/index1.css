@@ -6,6 +6,16 @@
     top: 150px;
     background-color: aqua;
 }
+.supir:after {
+    position: absolute;
+    top: -22px;
+    right: 6px;
+    content: "\274c";
+    font-size: 40px; 
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
 .seet1 {
     height: 50px;
     width: 50px;
@@ -14,6 +24,7 @@
     top: 240px;
     background-color: aqua;
 }
+
 .seet2 {
     height: 50px;
     width: 50px;
@@ -47,7 +58,32 @@
     top: 150px;
     background-color: aqua;
 }
+
+.seet6 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 330px;
+    top: 240px;
+    background-color: aqua;
+}
+
+.tambah{
+    position: absolute;
+    left: 350px;
+    top: 350px;
+    font-size: small;
+    color: aliceblue;
+}
+
+.hapus{
+    position: absolute;
+    left: 350px;
+    top: 400px;
+    font-size: small;
+    color: aliceblue;
+}
+
 body {
-    background-image: url('https://bussimulator.id/wp-content/uploads/edd/2018/12/Angkot_Front.jpg');
-    background-attachment: fixed;
+    background-color: black;
 }
