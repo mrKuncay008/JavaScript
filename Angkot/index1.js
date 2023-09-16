@@ -1,6 +1,6 @@
-var penumpang = [document.getElementsByClassName('seet')];
+var penumpang = document.getElementsByClassName('seet');
 for (var i = 0; i < penumpang.length; i++) {
-	penumpang[i].innerHTML = undefined;
+	penumpang[i].innerHTML = '<p>X</p>';
 }
 var tambah = function(nama, penumpang) {
 	// Chek apakah penumpang kosong
