@@ -1,9 +1,13 @@
-var penumpang = [];
+var penumpang = document.getElementsByClassName('seet');
+for (var i = 0; i < penumpang.length; i++) {
+	penumpang[i].innerHTML = '<p>X</p>';
+}
 var tambah = function(nama, penumpang) {
 	// Chek apakah penumpang kosong
 	if (penumpang.length == 0) {
 		// maka di tambah penumpang
 		penumpang.push(nama);
+		penumpang.innerHTML(nama);
 		// kembalikan nila
 		return penumpang
 	}
@@ -12,6 +16,7 @@ var tambah = function(nama, penumpang) {
 		for (var i = 0; i < penumpang.length; i++) {
 			if (penumpang[i] == undefined) {
 				penumpang[i] = nama;
+				penumpang[i] = document.getElementsByClassName('seet');
 			}
 			else if (penumpang[i] == nama) {
 				console.log(nama + ' Error Sudah Ada !!');

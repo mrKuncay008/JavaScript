@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.jalan {
+    width: 1200px;
+    height: 550px;
+    border: 2px solid red;
+    background-image: url('bg.jpg');
+    background-size: contain;
+    background-repeat: repeat-x fixed;
+    background-position: 50%;
+    animation: jalanan 10s infinite linear;
+}
+@keyframes jalanan {
+    0%{background-position: 0 0;}
+    100%{background-position: -100vw 0;}
+    
+}
+h2 {
+    text-shadow: 2px 8px 4px #A42341;
+    color: white;
+    position: relative;
+    right: -50%;
+    top: 40%;
+}

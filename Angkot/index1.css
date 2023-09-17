@@ -1,0 +1,89 @@
+.supir {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    background-color: aqua;
+}
+.supir:after {
+    position: absolute;
+    top: -22px;
+    right: 6px;
+    content: "\274c";
+    font-size: 40px; 
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+.seet1 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 100px;
+    top: 240px;
+    background-color: aqua;
+}
+
+.seet2 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 190px;
+    top: 150px;
+    background-color: aqua;
+}
+.seet3 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 250px;
+    top: 240px;
+    background-color: aqua;
+}
+.seet4 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 260px;
+    top: 150px;
+    background-color: aqua;
+}
+
+.seet5 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 330px;
+    top: 150px;
+    background-color: aqua;
+}
+
+.seet6 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 330px;
+    top: 240px;
+    background-color: aqua;
+}
+
+.tambah{
+    position: absolute;
+    left: 350px;
+    top: 350px;
+    font-size: small;
+    color: aliceblue;
+}
+
+.hapus{
+    position: absolute;
+    left: 350px;
+    top: 400px;
+    font-size: small;
+    color: aliceblue;
+}
+
+body {
+    background-color: black;
+}
