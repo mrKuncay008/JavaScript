@@ -9,7 +9,7 @@
 .supir:after {
     position: absolute;
     top: -22px;
-    right: 6px;
+    right: 0px;
     content: "\274c";
     font-size: 40px; 
     color: white;
