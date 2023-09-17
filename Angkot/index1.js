@@ -28,7 +28,7 @@ var hapus = function(nama, penumpang) {
 	if (penumpang.length == 0) {
 		console.log("Angkot Kosong")
 	}
-	else{
+	else {
 		for (var i = 0; i < penumpang.length; i++) {
 			if (penumpang[i] == nama) {
 				penumpang[i] = undefined;
@@ -36,6 +36,9 @@ var hapus = function(nama, penumpang) {
 			}
 			else if (i == penumpang.length - 1) {
 				console.log(nama + " Sudah Di apus");
+			}
+			else {
+				console.log(nama + " Sudah Tidak ada di anggkot")
 			}
 		}
 	}
