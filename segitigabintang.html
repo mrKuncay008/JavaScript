@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document segitiga bintang</title>
+
+    <style>
+        body {
+        background-color: black;
+        font-family: Courier;
+        
+        
+    }
+
+    img {
+        position: fixed;
+        width: 380px;
+        left: 32%;
+    }
+
+    .ft {
+        color: brown;
+        text-align: center;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        height: auto;
+        
+    }
+    .asu {
+        color: green; 
+    }
+
+    /*button {
+        color: black;
+        border-radius: 40%;
+        background-color: yellowo;
+        font-size: small;
+    }*/
+
+    </style>
+</head>
+<body>
+    
+<div id class="ft">
+        <p> H4cked by mrkuncay ft Tejch_0</p>
+        <p style="color: white;">root@mrkuncay:-$ </p>
+ </div>  
+       
+<div id class="asu">
+
+    <script type="text/javascript">
+    
+    alert("#### Program SwitchCase Segitiga")
+    var pilih = prompt("Pilih Pilihan: 1 sampai 4");
+
+        switch(pilih) {
+            case "1":
+                var n = 10;
+
+                for (var i = 1; i <= n; i++) 
+                {
+                    for (var j = i; j < n; j++) 
+                    document.write(" ");
+                
+                    for (var k = 1; k <= i; k++) 
+                    document.write("* ");
+                    document.write("<br>");
+                }
+                 break;
+
+            case "2":
+                var n = 10;
+
+                for (var i = n; i >= 1; i--) 
+                {
+                
+                    for (var j = i; j < n; j++) 
+                    document.write(" ");
+                
+                    for (var k = 1; k <= i; k++) 
+                    document.write("* ");
+                    document.write("<br>");
+                }
+                 break;
+            case "3":
+                var n = 10;
+                for (var i = 1; i <= n; i++) {
+                    for (var x = 1; x <= i; x++) 
+                    
+                    document.write("* ");
+                    document.writeln("<br>");
+            }
+                break; 
+
+                default:
+                     alert("Coba Lagi");  
+               /* */
+         }
+        
+    </script>
+      
+ </div>
+</body>
+</html>

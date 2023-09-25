@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array square</title>
+    <!-- Tampilan css -->
+    <style>
+        body {
+            background-color: black;
+        }
+        #kotak1 {
+            height: 80px;
+            width: 80px;
+            position: relative;
+            left: 50%;
+            top: 200px;
+            background-color: aqua;
+        }
+        .tambah{
+            position: absolute;
+            left: 350px;
+            top: 350px;
+            font-size: small;
+            color: aliceblue;
+        }
+
+        .hapus{
+            position: absolute;
+            left: 350px;
+            top: 400px;
+            font-size: small;
+            color: aliceblue;
+        }
+        #kotak1 {
+            color:black;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        #tmbh{
+            background: green;
+            color: aquamarine;
+        }
+        #hpus{
+            background: red;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>       
+    <div id="kotak1"></div>
+        <div class="tambah">
+			<label for="pnp">Masukan Penumpang</label>
+			<input type="text" id="pnp" name="Tambah">
+			<button id="tmbh">Submit</button>
+		</div>
+		<div class="hapus">
+			<label for="hps">Hapus Penumpang</label>
+			<input type="text" id="hps" name="Hapus">
+			<button id="hpus">Submit</button>
+		</div>
+
+        <!-- Javascript -->
+        <script>
+           var tambah = document.querySelector('#pnp');
+           var hapus = document.querySelector('#hps');
+           var seet = document.querySelector('#kotak1');
+
+           if (localStorage.getItem('Penump') != null) {
+                localStorage.setItem('data','[]');
+            }
+
+            function tmbh() {
+                var input = JSON.parse(localStorage.getItem('penump'));
+                input.push(kotak1.value);
+            }
+        </script>
+    </body>
+</html>
