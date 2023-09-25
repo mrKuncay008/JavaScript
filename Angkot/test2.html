@@ -51,8 +51,8 @@
 <body>       
     <div id="kotak1"></div>
         <div class="tambah">
-			<label for="pnp">Masukan Penumpang</label>
-			<input type="text" id="pnp" name="Tambah">
+			<label for="pnp">Memasukan Penumpang</label>
+			<input type="text" placeholder="Input Penumpang" id="pnp" name="Tambah">
 			<button id="tmbh">Submit</button>
 		</div>
 		<div class="hapus">
@@ -63,18 +63,35 @@
 
         <!-- Javascript -->
         <script>
-           var tambah = document.querySelector('#pnp');
-           var hapus = document.querySelector('#hps');
-           var seet = document.querySelector('#kotak1');
+           var Penumpang = [];
 
-           if (localStorage.getItem('Penump') != null) {
-                localStorage.setItem('data','[]');
-            }
+           var dataPenump = document.getElementById('tmbh');
+           var input = document.getElementById('pnp');
+           var output = document.getElementById('kotak1'); 
 
-            function tmbh() {
-                var input = JSON.parse(localStorage.getItem('penump'));
-                input.push(kotak1.value);
+           dataPenump.addEventListener('click', function(event) {
+            event.preventDefault();
+            var nama = input.value;
+            
+            if (nama.trim() !== '') {
+                Penumpang.push(nama);
+                input.value = '';
+                // fungsi tampil
+                tampil();
             }
+        });
+
+           function tampil() {
+                output.innerHTML = '';
+
+                Penumpang.forEach(function(nama) {
+                var li = document.createElement('li');
+                li.textContent = nama;
+                output.appendChild(li);
+                
+                });
+           }
+
         </script>
     </body>
 </html>
