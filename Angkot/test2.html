@@ -16,7 +16,22 @@
             left: 50%;
             top: 200px;
             background-color: aqua;
+            color:black;
+            font-weight: bold;
+            font-family: monospace;
         }
+
+        #kotak2 {
+            height: 80px;
+            width: 80px;
+            position: relative;
+            left: 58%;
+            top: 200px;
+            background-color: aqua;
+            color:black;
+            font-weight: bold;
+            font-family: monospace;
+        }   
         .tambah{
             position: absolute;
             left: 350px;
@@ -32,11 +47,6 @@
             font-size: small;
             color: aliceblue;
         }
-        #kotak1 {
-            color:black;
-            font-weight: bold;
-            font-family: monospace;
-        }
 
         #tmbh{
             background: green;
@@ -50,6 +60,7 @@
 </head>
 <body>       
     <div id="kotak1"></div>
+    <div id="kotak2"></div>
         <div class="tambah">
 			<label for="pnp">Memasukan Penumpang</label>
 			<input type="text" placeholder="Input Penumpang" id="pnp" name="Tambah">
@@ -67,7 +78,8 @@
 
            var dataPenump = document.getElementById('tmbh');
            var input = document.getElementById('pnp');
-           var output = document.getElementById('kotak1'); 
+           var output = document.getElementById('kotak1');
+           var output2 = document.getElementById('kotak2'); 
 
            dataPenump.addEventListener('click', function(event) {
             event.preventDefault();
@@ -78,9 +90,14 @@
                 input.value = '';
                 // fungsi tampil
                 tampil();
+        }
+        if (nama.trim() !== '') {
+                Penumpang.push(nama);
+                input.value = '';
+                // fungsi tampil
+                tampil2();
             }
-        });
-
+    });
            function tampil() {
                 output.innerHTML = '';
 
@@ -88,6 +105,23 @@
                 var li = document.createElement('li');
                 li.textContent = nama;
                 output.appendChild(li);
+                
+                });
+           }
+             if (nama.trim() !== '') {
+                Penumpang.push(nama);
+                input.value = '';
+                // fungsi tampil
+                tampil2();
+            }
+
+           function tampil2() {
+                outpu2.innerHTML = '';
+
+                Penumpang.forEach(function(nama) {
+                var li2 = document.createElement('li');
+                li2.textContent = nama;
+                output2.appendChild(li2);
                 
                 });
            }
