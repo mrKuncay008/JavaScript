@@ -1,6 +1,6 @@
 var penumpang = [];
 
-function tambah(nama){
+function tambah(nama,penumpang){
 	// Chek apakah penumpang kosong
 	if (penumpang.length === 0) {
 		// maka di tambah penumpang

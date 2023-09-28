@@ -6,32 +6,110 @@
     <title>Array square</title>
     <!-- Tampilan css -->
     <style>
-        body {
+    body {
             background-color: black;
         }
-        #kotak1 {
-            height: 80px;
-            width: 80px;
-            position: relative;
-            left: 50%;
-            top: 200px;
-            background-color: aqua;
-            color:black;
-            font-weight: bold;
-            font-family: monospace;
-        }
+    /* #cross {
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 7px solid #f56b00;
+        line-height: 100px;
+        text-align: center;
+        background:
+            linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+            linear-gradient(135deg, #f56b00 0%,#f56b00 43%,#fff 45%,#fff 55%,#f56b00 57%,#f56b00 100%);
+    
+    } */
+    #supir {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 100px;
+        top: 150px;
+        background-color: aqua;
+    }
+    #supir:after {
+        position: absolute;
+        top: -22px;
+        right: 0px;
+        content: "\274c";
+        font-size: 40px; 
+        color: white;
+        line-height: 100px;
+        text-align: center;
+    }
 
-        #kotak2 {
-            height: 80px;
-            width: 80px;
-            position: relative;
-            left: 58%;
-            top: 200px;
-            background-color: aqua;
-            color:black;
-            font-weight: bold;
-            font-family: monospace;
-        }   
+    .kotak1 {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 100px;
+        top: 240px;
+        background-color: aqua;
+        color:black;
+        font-weight: bold;
+        font-family: monospace;
+    }
+
+    .kotak2 {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 190px;
+        top: 150px;
+        background-color: aqua;
+        color:black;
+        font-weight: bold;
+        font-family: monospace;
+    }
+    .kotak3 {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 250px;
+        top: 240px;
+        background-color: aqua;
+        color:black;
+        font-weight: bold;
+        font-family: monospace;
+    }
+    .kotak4 {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 260px;
+        top: 150px;
+        background-color: aqua;
+        color:black;
+        font-weight: bold;
+        font-family: monospace;
+    }
+
+    .kotak5 {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 330px;
+        top: 150px;
+        background-color: aqua;
+        color:black;
+        font-weight: bold;
+        font-family: monospace;
+    }
+
+    .kotak6 {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 330px;
+        top: 240px;
+        background-color: aqua;
+        color:black;
+        font-weight: bold;
+        font-family: monospace;
+    }
         .tambah{
             position: absolute;
             left: 350px;
@@ -58,9 +136,14 @@
         }
     </style>
 </head>
-<body>       
-    <div id="kotak1"></div>
-    <div id="kotak2"></div>
+<body>
+    <div id="supir"></div>
+    <div id="kotak1" class="kotak1"></div>
+    <div id="kotak2" class="kotak2"></div>
+    <div id="kotak3" class="kotak3"></div>
+    <div id="kotak4" class="kotak4"></div>
+    <div id="kotak5" class="kotak5"></div>
+    <div id="kotak6" class="kotak6"></div>
         <div class="tambah">
 			<label for="pnp">Memasukan Penumpang</label>
 			<input type="text" placeholder="Input Penumpang" id="pnp" name="Tambah">
@@ -80,50 +163,48 @@
            var input = document.getElementById('pnp');
            var output = document.getElementById('kotak1');
            var output2 = document.getElementById('kotak2'); 
-
+           var output3 = document.getElementById('kotak3');
+           var output4 = document.getElementById('kotak4');
+           var output5 = document.getElementById('kotak5');
+           var output6 = document.getElementById('kotak6'); 
+           var isOutput = output;
            dataPenump.addEventListener('click', function(event) {
-            event.preventDefault();
-            var nama = input.value;
-            
+           event.preventDefault();
+            var nama = input.value;  
+
             if (nama.trim() !== '') {
-                Penumpang.push(nama);
-                input.value = '';
                 // fungsi tampil
-                tampil();
-        }
-        if (nama.trim() !== '') {
                 Penumpang.push(nama);
+                tampil(isOutput);
+
+                // Ganti output saat ini secara bergantian
+                if (isOutput === output) {
+                    isOutput = output2;
+                } else if (isOutput === output2) {
+                    isOutput = output3;
+                } else if (isOutput === output3) {
+                    isOutput = output4;
+                } else if (isOutput === output4) {
+                    isOutput = output5;
+                } else if (isOutput === output5) {
+                    isOutput = output6;
+                } 
+                 else if (Penumpang.length > 6 ) {
+                    Penumpang.pop();
+                    window.alert("Sudah Full");
+                }
+
                 input.value = '';
-                // fungsi tampil
-                tampil2();
             }
-    });
-           function tampil() {
-                output.innerHTML = '';
+        });
+           function tampil(outputElement) {
+                outputElement.innerHTML = '';
 
                 Penumpang.forEach(function(nama) {
-                var li = document.createElement('li');
-                li.textContent = nama;
-                output.appendChild(li);
-                
-                });
-           }
-             if (nama.trim() !== '') {
-                Penumpang.push(nama);
-                input.value = '';
-                // fungsi tampil
-                tampil2();
-            }
-
-           function tampil2() {
-                outpu2.innerHTML = '';
-
-                Penumpang.forEach(function(nama) {
-                var li2 = document.createElement('li');
-                li2.textContent = nama;
-                output2.appendChild(li2);
-                
-                });
+                var att = document.createAttribute("style");
+                att.value = "position: absolute;display: inline-block;width: 20px;height: 20px;border: 7px solid #f56b00;line-height: 100px;text-align: center;background:linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),linear-gradient(135deg, #f56b00 0%,#f56b00 43%,#fff 45%,#fff 55%,#f56b00 57%,#f56b00 100%);";
+                outputElement.setAttributeNode(att); 
+            });
            }
 
         </script>
