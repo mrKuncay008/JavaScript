@@ -146,7 +146,7 @@
     <div id="kotak6" class="kotak6"></div>
         <div class="tambah">
 			<label for="pnp">Memasukan Penumpang</label>
-			<input type="text" placeholder="Input Penumpang" id="pnp" name="Tambah">
+			<input type="text" placeholder="Input Penumpang" id="pnp" one name="Tambah">
 			<button id="tmbh">Submit</button>
 		</div>
 		<div class="hapus">
@@ -168,35 +168,48 @@
            var output5 = document.getElementById('kotak5');
            var output6 = document.getElementById('kotak6'); 
            var isOutput = output;
-           dataPenump.addEventListener('click', function(event) {
-           event.preventDefault();
-            var nama = input.value;  
 
-            if (nama.trim() !== '') {
-                // fungsi tampil
-                Penumpang.push(nama);
-                tampil(isOutput);
+           dataPenump.addEventListener("click", function () {
+                tambahPenump();
+           });
 
-                // Ganti output saat ini secara bergantian
-                if (isOutput === output) {
-                    isOutput = output2;
-                } else if (isOutput === output2) {
-                    isOutput = output3;
-                } else if (isOutput === output3) {
-                    isOutput = output4;
-                } else if (isOutput === output4) {
-                    isOutput = output5;
-                } else if (isOutput === output5) {
-                    isOutput = output6;
-                } 
-                 else if (Penumpang.length > 6 ) {
-                    Penumpang.pop();
-                    window.alert("Sudah Full");
+           input.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                    tambahPenump();
                 }
+           });
 
-                input.value = '';
+           function tambahPenump() {
+            var nama = input.value;  
+            if (nama === '') {
+                window.alert("Masukan nama");
+                return;
             }
-        });
+                if (nama.trim() !== '') {
+                    // fungsi tampil
+                    Penumpang.push(nama);
+                    tampil(isOutput);
+
+                    // Ganti output saat ini secara bergantian
+                if (isOutput === output) {
+                        isOutput = output2;
+                    } else if (isOutput === output2) {
+                        isOutput = output3;
+                    } else if (isOutput === output3) {
+                        isOutput = output4;
+                    } else if (isOutput === output4) {
+                        isOutput = output5;
+                    } else if (isOutput === output5) {
+                        isOutput = output6;
+                    } 
+                    else if (Penumpang.length > 6 ) {
+                        Penumpang.pop();
+                        window.alert("Sudah Full");
+                    }
+                    input.value = '';
+                }   
+            }
+        
            function tampil(outputElement) {
                 outputElement.innerHTML = '';
 
