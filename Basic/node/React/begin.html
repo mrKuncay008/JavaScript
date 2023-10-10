@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intruductions React js app</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <div></div>
+</body>
+<script type="text/babel">
+    // ini mengguanakan react
+    const contan = document.getElementById('root');
+    const react = ReactDOM.createRoot(contan);
+    react.render(<h1>hallo kuncay 🐈‍⬛</h1>); // Dengan satu element
+
+    const contan2 = document.getElementById('root2');
+    const react2 = ReactDOM.createRoot(contan2);
+
+    let Text = (props) => {
+        return (<h3>Hallo ini Kuncay lagi {props.obj} {props.emo}..!!😍🐈‍⬛</h3>)
+    }
+    let Head = () => {
+        return (
+            <>
+                <Text obj ="Turu" emo ="😪"/> 
+                <Text obj ="Mangan" emo ="🦭"/> 
+            </>
+        );
+    }
+    react2.render(<Head />)
+    // react2.render(
+    //     <>
+    //         <h1>Hallo ini Kuncay</h1>
+    //         <h1>Hallo ini Kuncay</h1>
+    //         <p>Senang Bertemu Dengan anda !!</p>
+    //     </>
+    // );
+
+    // ini adalah jika menggunakan DOM secara manual
+    // var x = document.getElementById('root');
+    // var buat = document.createElement('li');
+    // var buatConten = document.createTextNode("Hallo Kuncay !!");
+    // buat.appendChild(buatConten);
+    // x.appendChild(buat);   
+</script>
+</html>

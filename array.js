@@ -1,5 +1,5 @@
 // array foreach
-var angka = [1,2,3,4,5,6,7,8];
+let angka = [1,2,3,4,5,6,7,8];
 
 function array1() {
 	var tekan = document.getElementById('tekan');
@@ -14,7 +14,7 @@ function array2() {
 	return x * 2
 	});
 }
-function array3() {
+let array3 = () => {
 	var nama = ['kuncay', 'popy', 'mansur', 'oren'];
 	var tekan3 = document.getElementById('tekan3');
 	var out = '';
