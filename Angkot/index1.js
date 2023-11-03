@@ -91,11 +91,10 @@ function tambahPenump() {
 			 isOutput = output5;
 		 } else if (isOutput === output5) {
 			 isOutput = output6;
-		 } 
-		 else if (Penumpang.length > 6 ) {
+		 } else if (Penumpang.length > 6 ) {
 			 Penumpang.pop();
 			 window.alert("Sudah Full");
-		 }
+		 } 
 		 input.value = '';
 	 }   
  }

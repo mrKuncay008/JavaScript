@@ -103,17 +103,19 @@ font-weight: bold;
 font-family: monospace;
 }
 .tambah{
-    position: absolute;
-    left: 350px;
-    top: 350px;
+    position: relative;
+    display: block;
+    margin: auto 10%;
+    padding: auto;
     font-size: small;
     color: aliceblue;
 }
 
 .hapus{
-    position: absolute;
-    left: 350px;
-    top: 400px;
+    position: relative;
+    display: block;
+    margin: auto 10%;
+    padding: auto;
     font-size: small;
     color: aliceblue;
 }
@@ -125,4 +127,12 @@ font-family: monospace;
 #hpus{
     background: red;
     color: aquamarine;
+}
+.objKur {
+    background-color:white;
+    position: fixed;
+    display: block;
+    margin: 20px;
+    max-height: 20%;
+    max-width: 10%;
 }

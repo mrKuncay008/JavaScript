@@ -14,9 +14,9 @@ body {
     border: 2px solid red;
     background-image: url('bg.jpg');
     background-size: contain;
-    background-repeat: repeat-x fixed;
-    background-position: 50%;
-    animation: jalanan 10s infinite linear;
+    background-repeat: repeat-x;
+    background-position: 100%;
+    animation: jalanan 7s infinite linear;
 }
 @keyframes jalanan {
     0%{background-position: 0 0;}
@@ -26,7 +26,6 @@ body {
 h2 {
     text-shadow: 2px 8px 4px #A42341;
     color: white;
-    position: relative;
-    right: -50%;
-    top: 40%;
+    position: fixed;
+    margin: 20% 0 auto;
 }
