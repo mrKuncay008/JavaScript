@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body {
+        background-color: black;
+        font-family: Courier;
+        
+        
+    }
+
+     .asu {
+
+        color: whitesmoke;
+        
+    }
+
+    .ft {
+        color: brown;
+        text-align: center;
+        width: auto;
+        height: auto;
+        font-size: large;
+    }
+   </style>
+    <title>Document Variable</title>
+</head>
+<body>
+    
+<div id class="asu">
+<script>
+
+    // membuat variable
+
+    var nama = "Kuncay meo";
+    var umur = 20;
+    var url = "https://external-content";
+    var a = 100;
+    var b = 4;
+    var itam = 0;
+
+
+    // output popup
+    //alert ("hallo selamat datang" + nama);
+
+    // output body html
+    document.write("Nama kucing: " + nama + "<br>" + "<br>");
+    document.write("Umur kucing: " + umur + "<br>"+ "<br>");
+    document.write("poto kucingnya: " + url + "<br>"+ "<br>");
+
+    //kurang 
+    itam = a - b;
+    document.writeln("itam dikurang adlaha " + itam + "<br>");
+    //kali
+    itam = a * b;
+    document.writeln("itam dikali adlaha " + itam + "<br>");
+    // bagi
+    itam = a / b;
+    document.writeln("itam dibagi adlaha " + itam + "<br>");
+    //pangkat
+    itam = a ** b;
+    document.writeln("itam pangakat adlaha " + itam + "<br>");
+    document.writeln("<br>");
+
+    // Perbandingan
+    var itam = 10;
+    var kuncay = 5;
+    var hasil = 0;
+    //sama dengan
+    hasil = itam == kuncay;
+    document.writeln("itam = kuncay: " + hasil + "<br>");
+    // lebih kecil
+    hasil = itam < kuncay;
+    document.writeln("itam lebih kecil dari kuncay: "+ hasil +"<br>");
+    // lebih besar
+    hasil = itam > kuncay;
+    document.writeln("itam lebih besar dari kuncay: "+ hasil +"<br>");
+    //tidak sama dengan
+    hasil = itam != kuncay;
+    document.writeln("itam tidak samadeng kuncay: "+ hasil +"<br>");
+    // besar sama dengan
+    hasil = itam >= kuncay;
+    document.writeln("itam lebih besar dari kuncay: "+ hasil +"<br>" + "<br>");
+    
+    // op logika
+    // &&dan , ||atau , !tidaknot
+    var benar = itam > kuncay;      // itam lebih besar dari kuncay
+    var salah = kuncay < itam;      // itam lebih kecil dari kuncay
+
+    logika = benar && salah 
+    document.writeln( "true dan else " + logika +"<br>"); // benar & salah : benar
+
+    logika = benar || salah;
+    document.writeln("true atau else " + logika + "<br>"); // benar atau salah : benar
+
+    logika = !salah;
+    document.writeln("true tidak else " + logika + "<br>"); // tidak benar : salah
+
+    // op Tenary
+    // <Conditions> ? "true" : "else";
+        // var tanya = confirm("Apakah ini kuncay ? ")
+        // var siapa = tanya ? "hallo kuncay" : "hmmm bukan kuncay hiyaa";
+        // alert(siapa);
+
+    // Escape seq
+    document.writeln("<textarea cols='45' rows='6'>");
+    // \n = enter
+    document.writeln(nama + " Kucing Punya \n Masse\n");
+    // \t tab
+    document.writeln(nama + " Kucing\t\tPunya Masse");
+    // \\ /
+    document.writeln(nama + "\\ " + itam + " Adalah Kucing Masse " + hasil);
+    // \' untuk '
+    document.writeln("\" kuncay Adalah Kucing \" " + hasil);
+
+    document.writeln("</textarea");
+
+
+</script>
+</div>
+<div id class="ft">
+    <p> H4cked by mrkuncay ft Tejch_0</p>
+    <p style="color: white;">root@mrkuncay: </p>
+
+</div>
+</body>
+</html>
