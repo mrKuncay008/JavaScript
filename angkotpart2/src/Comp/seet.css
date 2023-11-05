@@ -1,0 +1,42 @@
+.supir {
+height: 50px;
+width: 50px;
+position: absolute;
+top: 150px;
+background-color: white;
+}
+.supir:after {
+  position: absolute;
+  top: -25px;
+  right: 5px;
+  content: "\274c";
+  font-size: 40px;
+  color: red;
+  line-height: 100px;
+  text-align: center;
+}
+
+.kotak1 {
+height: 50px;
+width: 50px;
+position: absolute;
+left: auto;
+top: 220px;
+background-color: white;
+color:black;
+font-weight: bold;
+font-family: monospace;
+}
+
+.kotak2 {
+height: 50px;
+width: 50px;
+margin: 0px;
+position: absolute;
+left: auto ;
+top: 220px;
+background-color: white;
+color:black;
+font-weight: bold;
+font-family: monospace;
+}
