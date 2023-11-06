@@ -7,21 +7,23 @@ import './App.css';
 import './Comp/seet.css';
 import './Comp/input.css';
 
-
 function App() {
   const element = () => {
-    return (
+  return (
       <p className='element-tit'>by maspren || Mr.Kuncay008</p>
       /*ini adalah obj props dari file Prop*/
   );
 }
+const hendle = (message) => {
+  window.alert(message);
+}
   return (
     <div className="App">
       <div className='App-jud'>
-          <Prop name={element} />
+        <Prop name={element} />
       </div>
       <div className="App-header">
-      <Seet />
+      <Seet Algo={hendle} />
       <Input />
             <p>Hallo Welcome a Angkot Project 😊 ! Cheerss 🥳 !</p>
       </div>

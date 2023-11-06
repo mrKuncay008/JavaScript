@@ -28,23 +28,9 @@ font-weight: bold;
 font-family: monospace;
 }
 
-.kotak2 {
+.kotak3, .kotak2 {
   height: 50px;
   width: 50px;
-  margin: 0px;
-  position: absolute;
-  left: 600px ;
-  top: 220px;
-  background-color: white;
-  color:black;
-  font-weight: bold;
-  font-family: monospace;
-}
-
-.kotak3 {
-  height: 50px;
-  width: 50px;
-  margin: 0px;
   position: absolute;
   left: 760px ;
   top: 220px;
@@ -53,32 +39,15 @@ font-family: monospace;
   font-weight: bold;
   font-family: monospace;
 }
+.kotak2 {left: 600px;}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   /* For mobile phones: */
   .kotak2 {
-    height: 50px;
-    width: 50px;
-    margin: 0px;
-    position: absolute;
-    left: 140px ;
-    top: 220px;
-    background-color: white;
-    color:black;
-    font-weight: bold;
-    font-family: monospace;
+    left: 30%;
   }
 
   .kotak3 {
-    height: 50px;
-    width: 50px;
-    margin: 0px;
-    position: absolute;
-    left: 270px ;
-    top: 220px;
-    background-color: white;
-    color:black;
-    font-weight: bold;
-    font-family: monospace;
+    left: 70%;
   }
 }
