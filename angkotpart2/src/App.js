@@ -1,10 +1,11 @@
-import logo from './Property/lol.png';
 import Prop from './Comp/props';
 import Seet from './Comp/seet';
+import Input from './Comp/input';
 
 // Styles
 import './App.css';
 import './Comp/seet.css';
+import './Comp/input.css';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       </div>
       <div className="App-header">
       <Seet />
+      <Input />
             <p>Hallo Welcome a Angkot Project 😊 ! Cheerss 🥳 !</p>
       </div>
     </div>

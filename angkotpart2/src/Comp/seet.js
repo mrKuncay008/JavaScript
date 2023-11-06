@@ -7,6 +7,7 @@ const Seet = () => {
     <div className="supir" />
     <img src={KurSatu} alt="Kursi 1" className="kotak1" />
     <img src={KurSatu} alt="Kursi 1" className="kotak2" />
+    <img src={KurSatu} alt="Kursi 1" className="kotak3" />
   </div>
   );
 }
