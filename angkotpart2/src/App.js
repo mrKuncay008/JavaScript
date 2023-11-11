@@ -14,16 +14,13 @@ function App() {
       /*ini adalah obj props dari file Prop*/
   );
 }
-const hendle = (message) => {
-  window.alert(message);
-}
   return (
     <div className="App">
       <div className='App-jud'>
         <Prop name={element} />
       </div>
       <div className="App-header">
-      <Seet Algo={hendle} />
+      <Seet  />
       <Input />
             <p>Hallo Welcome a Angkot Project 😊 ! Cheerss 🥳 !</p>
       </div>
