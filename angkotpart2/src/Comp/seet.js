@@ -1,21 +1,22 @@
 import React from 'react';
 import KurSatu from '../Property/kursi.png';
 const Seet = (props) => {
-
   const algo = () => {
     window.alert("Kursi Masih Kosong");
-  
-    // var Penumpang = [];
-  
-    // var dataPenump = document.getElementById('tambah');
-    // var input = document.getElementById('penumpang');
-    // var output1 = document.getElementById('kotak1');
-    // var output2 = document.getElementById('kotak2'); 
-    // var output3 = document.getElementById('kotak3');
   }
   const handle = () => {
     algo(); // Memanggil fungsi asu saat kursi diklik
+    const CobArray = [];
+    function tambah(nama,CobArray){
+      // Chek apakah penumpang kosong
+      if (CobArray.length === 0) {
+        // maka di tambah penumpang
+        CobArray.push(nama);
+        // kembalikan nila
+        return CobArray;
+      }
   }
+}
   // nanti algoritma java nya menggunakan Prop
   return (
     <div className="Area">

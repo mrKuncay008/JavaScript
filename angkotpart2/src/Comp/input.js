@@ -6,7 +6,7 @@ const Input = () => {
     <div class="tambah">
       <label for="penumpang">Memasukan Penumpang </label>
       <input type="text" placeholder="Input Penumpang" id="penumpang" one name="Tambah"
-      maxlength="4" size="9" />
+      maxlength="6" size="9" />
       <button id="tambah">Submit</button>
     </div>
   );
