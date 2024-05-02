@@ -1,0 +1,16 @@
+{
+  "name": "Click",
+  "version": "1.0.0",
+  "description": "",
+  "main": "array.js",
+  "scripts": {
+    "start": "node array.js",
+    "build": "pkg package.json --targets latest-win-x64",
+    "test": "test"
+  },
+  "bin": {
+    "exe" : "array.js"
+  },
+  "author": "kuncay",
+  "license": "ISC"
+}
