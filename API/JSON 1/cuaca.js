@@ -1,5 +1,3 @@
-                
-
 const data = {
     "current": {
        "dt":1684929490,

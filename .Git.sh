@@ -20,3 +20,7 @@ git commit -m "$commit"
 
 echo
 
+echo -e "Final Step: ${GREEN} Git Push repo ${NOCOLOR}"
+git push
+
+echo
