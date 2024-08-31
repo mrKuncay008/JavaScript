@@ -35,3 +35,24 @@ console.log((function (a) {
   /*
   .toString(16): Mengonversi hasil penjumlahan ke format string heksadesimal.
   .slice(1): Menghapus karakter pertama (1 dari (1 << 24)) untuk mendapatkan string heksadesimal yang benar-benar 6 dig */
+
+
+class ColorArrow {
+  constructor (r, g, b, nama) {
+    this.r = r;
+    this.g = g;
+    this.b = b;
+    this.nama = nama;
+  }
+  ColorName = () => console.log(`Ini adalah warna ${this.nama}`);
+
+  rgb () { // Method Arrow fungsi yang di dalam fungsi
+    return (r, g, b) => {
+      return `rgb (${r}, ${g}, ${b})`;
+    };
+  }
+}
+
+callArrow = new ColorArrow(206, 18, 18,'Red');
+console.log(callArrow);
+callArrow.ColorName();

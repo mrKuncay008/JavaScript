@@ -52,3 +52,33 @@ Fungsi yang didefinisikan dalam tanda kurung seperti ini adalah fungsi yang lang
 ```
 Arrow ini hanya menghapus kurung kurawal yang membuat line code nya lebih rapih dan simple, namun ini hanya di gunakan untuk satu parameter
 dan satu deklarasi tidak bisa di tambah lagi.
+
+## Funct Arrow yang di bungkus Class
+Fungsi arrow bisa menggunakan this. dan new constructer jika Funct arrow di bungkus dengan class terlebih dahulu.
+
+```js
+class ColorArrow { // Membungkus fuct di dalam class
+  constructor (r, g, b, nama) {
+    this.r = r;
+    this.g = g; // Consturctur R, G, B menggunakan this
+    this.b = b;
+    this.nama = nama;
+  }
+  ColorName = () => console.log(`Ini adalah warna ${this.nama}`); // Menyimpan variable arrow funct di dalam class function
+}
+```
+
+```js
+rgb () { // Method Arrow fungsi yang di dalam fungsi
+    return (r, g, b) => {
+      return `rgb (${r}, ${g}, ${b})`;
+    };
+  }
+```
+dalam baris `${rgb()}` mendeklarasikan Method arrow yang parameter nya R,G,B dan di isi value lagi dengan `${return rgb (${r}, ${g}, ${b});}`
+
+```js
+callArrow = new ColorArrow(206, 18, 18,'Red');
+console.log(callArrow);
+```
+Membuat variable baru lagi `${callArrow}` untuk mengisi new dari class untuk Memanggil isi value yang sudah di buat.
