@@ -2,13 +2,16 @@ import {  Table,  TableHeader,  TableBody,  TableColumn,  TableRow,  TableCell} 
 import { Button } from "@nextui-org/react";
 import {Input} from "@nextui-org/react";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const TodoBaru = () => {
   // State Menyimpan list
   const [todo, setTodo] = useState([
-    { id: 0, Aktifity: '', jam: '', status: '' },
+    { id: 1, Aktifity: 'Ngoding', jam: '-', status: 'Active' },
   ]);
+
+  const [message, setMessage] = useState('');
+
   // State Membersikan nilai todo saat di submit
   const[inputVal, setInputVal] = useState('');
   
@@ -26,11 +29,11 @@ const TodoBaru = () => {
     }
   };
   
-  const handleInputChange = (event) => { // State untuk render perubahan
+  const handleInputChange = (event) => {
     setInputVal(event.target.value);
   };
 
-  const outputTodo = todo.map((item) => // Fungsi state untuk mengubah komponen table
+  const outputTodo = todo.map((item) => 
     <TableRow key={item.id}>
         <TableCell>{item.Aktifity}</TableCell>
         <TableCell> {item.jam}</TableCell>
@@ -38,6 +41,31 @@ const TodoBaru = () => {
     </TableRow>
   );
   
+  const doneMess = (callback) => {
+    setTimeout(() => {
+      if(todo.length > 1)
+      setMessage('Mantepp add Done !!');
+      callback();
+    }, 2000);
+  }
+  const doneMessDua = () => {
+    setTimeout(() => {
+      if(todo.length > 2)
+      setMessage('Tambahin Lagii !!');
+    }, 2000);
+  }
+
+  // Lifecyle useEffect
+  useEffect(() => {
+    doneMess (() => {
+      doneMessDua();
+    })
+
+    return () => {
+      console.log('DidUnmount is Done byee !!')
+    }
+  }, [todo]);
+
   // Dubuging
   console.log('Todo: ', todo);
 
@@ -52,10 +80,8 @@ const TodoBaru = () => {
         <TableBody> {outputTodo} </TableBody>
       </Table>
       <div className="flex max-w-sm w-full flex-wrap md:flex-nowrap gap-4">
-
       <Input 
       type="text"
-      width="120px"
       label="Add List"
       value={inputVal} onChange={handleInputChange}
       onKeyDown={(e) => { // Fungsi untuk tekan enter
@@ -65,6 +91,7 @@ const TodoBaru = () => {
       />
     <Button onClick={addItem} size="sm" className="flex my-2 mx-2 text-slate-200" color="success">add</Button>
     </div>
+    <p className="text-green-500 flex text-medium">{message}</p>
   </div>
     );
 }
