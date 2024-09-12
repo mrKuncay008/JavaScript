@@ -26,11 +26,11 @@ const TodoBaru = () => {
     }
   };
   
-  const handleInputChange = (event) => {
+  const handleInputChange = (event) => { // State untuk render perubahan
     setInputVal(event.target.value);
   };
 
-  const outputTodo = todo.map((item) => 
+  const outputTodo = todo.map((item) => // Fungsi state untuk mengubah komponen table
     <TableRow key={item.id}>
         <TableCell>{item.Aktifity}</TableCell>
         <TableCell> {item.jam}</TableCell>
