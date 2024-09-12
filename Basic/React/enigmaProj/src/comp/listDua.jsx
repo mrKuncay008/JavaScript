@@ -7,7 +7,7 @@ import { useState } from "react";
 const TodoBaru = () => {
   // State Menyimpan list
   const [todo, setTodo] = useState([
-    { id: 1, Aktifity: 'Ngoding', jam: '-', status: 'Active' },
+    { id: 0, Aktifity: '', jam: '', status: '' },
   ]);
   // State Membersikan nilai todo saat di submit
   const[inputVal, setInputVal] = useState('');
@@ -52,10 +52,16 @@ const TodoBaru = () => {
         <TableBody> {outputTodo} </TableBody>
       </Table>
       <div className="flex max-w-sm w-full flex-wrap md:flex-nowrap gap-4">
+
       <Input 
       type="text"
+      width="120px"
       label="Add List"
       value={inputVal} onChange={handleInputChange}
+      onKeyDown={(e) => { // Fungsi untuk tekan enter
+        if(e.key === "Enter")
+          addItem();
+      }}
       />
     <Button onClick={addItem} size="sm" className="flex my-2 mx-2 text-slate-200" color="success">add</Button>
     </div>
