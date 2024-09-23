@@ -1,0 +1,58 @@
+{
+  "wislistItem": [
+    {
+      "id": "1",
+      "nama": "Ngoding"
+    },
+    {
+      "id": "2",
+      "nama": "Makan"
+    },
+    {
+      "id": "3",
+      "nama": "Turu"
+    },
+    {
+      "id": "4",
+      "nama": "Cully"
+    }
+  ],
+  "listDua": [
+    {
+      "id": "5b29",
+      "Aktifty": "Makan",
+      "Jam": "Makan",
+      "Status": "Makan"
+    },
+    {
+      "id": "ca69",
+      "Aktifty": "Berak",
+      "Jam": "-",
+      "Status": "Done"
+    },
+    {
+      "id": "e8c7",
+      "Aktifty": "Makan",
+      "Jam": "20:00",
+      "Status": "Done"
+    },
+    {
+      "id": "f3b9",
+      "Aktifty": "Ngding",
+      "Jam": "20:40",
+      "Status": "Done"
+    },
+    {
+      "id": "19c3",
+      "Aktifty": "Makan",
+      "Jam": "21:55",
+      "Status": "Done"
+    },
+    {
+      "id": "d20c",
+      "Aktifty": "Ngicli",
+      "Jam": "13:00",
+      "Status": "Done"
+    }
+  ]
+}

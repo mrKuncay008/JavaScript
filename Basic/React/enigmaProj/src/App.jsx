@@ -6,6 +6,8 @@ import './App.css'
 import Header from "./comp/header";
 import TodoBaru from './comp/listDua';
 import Footerme from './comp/Footerme';
+// import RegisPage from './comp/regisPage';
+// import RefCoba from './comp/UserRef';
 // import TodoSatu from "./comp/TodoList";
 // import Count from './comp/Ngitung';
 
@@ -33,7 +35,9 @@ function App() {
         
       {/* <Count /> */}
       <TodoBaru />
-      <Footerme>Mangatzz ❤️</Footerme>{/* Props Content */}
+      {/* <RegisPage /> */}
+      {/* <RefCoba /> */}
+      <Footerme>Mangatzz ❤️</Footerme>
     </>
   )
 }
