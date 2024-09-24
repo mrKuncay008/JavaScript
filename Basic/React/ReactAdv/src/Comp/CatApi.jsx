@@ -22,7 +22,7 @@ const CatsApi = () => {
     }, []);
 
     return (
-        <>
+    <>
         <div className="container table_main">
             <Table variant="light" responsive striped bordered hover size="md">
                 <thead className="thead-dark">
@@ -47,7 +47,7 @@ const CatsApi = () => {
                 </tbody>
             </Table>
         </div>
-</>
+    </>
     );
 }
 export default CatsApi

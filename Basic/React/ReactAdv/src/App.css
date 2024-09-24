@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-* {
-  background-color: rgb(41, 41, 41);
+#root {
+  margin: 0 auto;
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
 }
 
 .table_main Table{
