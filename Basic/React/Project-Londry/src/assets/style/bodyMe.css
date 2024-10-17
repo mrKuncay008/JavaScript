@@ -1,0 +1,29 @@
+.container__Trans {
+    margin-top: 10rem;
+    width: auto;
+}
+
+.container__one {
+    margin-top: 10rem;
+    height: auto;
+}
+
+.table p{
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 750px)
+{
+    .container__one {
+        margin-top: 10rem;
+        height: auto;
+    }
+    
+    .container__Trans {
+        margin-top: 10rem;
+    }
+    
+    .table p{
+        font-size: 10px;
+    }
+}

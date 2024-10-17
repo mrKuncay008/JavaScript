@@ -1,0 +1,103 @@
+{
+  "customers": [
+    {
+      "Name": "Mansur",
+      "Phone": "083736663244",
+      "Id": "#37729951",
+      "id": "8242"
+    },
+    {
+      "Name": "Olen Boy",
+      "Phone": "08467366",
+      "Id": "#09637972",
+      "id": "dc9c"
+    },
+    {
+      "Name": "Yuyu",
+      "Phone": "08990388377",
+      "Id": "#89473129",
+      "id": "fac2"
+    },
+    {
+      "id": "149d",
+      "Name": "Popy",
+      "Phone": "08736662522",
+      "Id": "#90120393"
+    },
+    {
+      "id": "7504",
+      "Name": "Cok",
+      "Phone": "0873666356",
+      "Id": "#61073502"
+    }
+  ],
+  "trans": [
+    {
+      "id": "7e7a",
+      "Name": "Olen",
+      "Date": "10/10",
+      "Order": "Paket Cuci",
+      "Quantity": "3",
+      "Total": 21000,
+      "Id": "T-006465054"
+    },
+    {
+      "id": "5795",
+      "Name": "Mansur",
+      "Date": "20/10",
+      "Order": "Paket Cuci Setrika",
+      "Quantity": "2",
+      "Total": 22000,
+      "Id": "T-007052439"
+    },
+    {
+      "id": "4305",
+      "Name": "Yuyu",
+      "Date": "16/10",
+      "Order": "Paket Cuci",
+      "Quantity": "1",
+      "Total": 7000,
+      "Id": "T-001865789"
+    },
+    {
+      "id": "ed79",
+      "Name": "Popy",
+      "Date": "16/10",
+      "Order": "Paket Cuci",
+      "Quantity": "1.5",
+      "Total": 10500,
+      "Id": "T-005176279"
+    },
+    {
+      "id": "d3a7",
+      "Name": "Cok",
+      "Date": "17/10",
+      "Order": "Paket Cuci",
+      "Quantity": "2",
+      "Total": 14000,
+      "Id": "T-000829340"
+    }
+  ],
+  "products": [
+    {
+      "Name": "Paket Cuci",
+      "Harga": 7000,
+      "id": "5493"
+    },
+    {
+      "Name": "Paket Cuci Express",
+      "Harga": 12000,
+      "id": "c49f"
+    },
+    {
+      "id": "48d0",
+      "Name": "Paket Cuci Setrika",
+      "Harga": "11000"
+    },
+    {
+      "id": "26b0",
+      "Name": "Paket Promo Oktober",
+      "Harga": "10000"
+    }
+  ]
+}
