@@ -23,12 +23,6 @@
       "Name": "Popy",
       "Phone": "08736662522",
       "Id": "#90120393"
-    },
-    {
-      "id": "7504",
-      "Name": "Cok",
-      "Phone": "0873666356",
-      "Id": "#61073502"
     }
   ],
   "trans": [
@@ -76,6 +70,15 @@
       "Quantity": "2",
       "Total": 14000,
       "Id": "T-000829340"
+    },
+    {
+      "id": "e234",
+      "Name": "Aisma",
+      "Date": "17-10",
+      "Order": "Paket Cuci",
+      "Quantity": "2.7",
+      "Total": 18900,
+      "Id": "T-004905498"
     }
   ],
   "products": [
